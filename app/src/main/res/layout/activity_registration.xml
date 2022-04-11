@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Registration">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/capxcvcvgmhture">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/capxcvcvgmhture" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/shape_left_panel"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/shape_register_panel"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="70dp"
+        android:paddingRight="50dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edit_text"
+            android:gravity="center"
+            android:hint="Username"
+            android:id="@+id/fullname"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edit_text"
+            android:gravity="center"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edit_text"
+            android:gravity="center"
+            android:inputType="text"
+            android:hint="Pharmacy Name"
+            android:id="@+id/password"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edit_text"
+            android:gravity="center"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="180dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:id="@+id/register"
+            android:text="Register"
+            android:textColorHint="@android:color/holo_purple"
+            android:background="@drawable/shape_login_button"
+            android:textColor="@android:color/background_light" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:text="Do you have an account?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="180dp"
+        android:textColor="@color/colorAccent"
+        android:text="SIGN UP"/>
+
+</RelativeLayout>

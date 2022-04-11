@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+tools:context=".MainActivity">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:src="@drawable/upload3"
+    android:scaleType="fitCenter"
+    android:id="@+id/imageViewAdd"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/inputImageName"
+    android:hint="Enter Image Name"
+    android:layout_below="@id/imageViewAdd"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:hint="Enter Price tag"
+         android:layout_below="@id/inputImageName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textViewProgress"
+    android:layout_below="@id/price"
+    android:text="0.0%"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:layout_marginTop="20dp"/>
+
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressbar"
+
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_below="@id/textViewProgress"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/btnupload"
+        android:background="@color/design_default_color_primary_variant"
+        android:layout_below="@id/progressbar"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        />
+
+</RelativeLayout>
